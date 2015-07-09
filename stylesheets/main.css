@@ -1,0 +1,134 @@
+.container {
+    width: 80%;
+    margin:auto;
+}
+
+#head-part {
+    height: 500px;
+    background: url("../images/head_background.jpeg") ;
+    background-size: 100% auto;
+}
+
+#head-nav {
+    padding-top: 30px;
+}
+
+#logo {
+    height: 30px;
+}
+
+#head-button {
+    float: right;
+}
+
+#head-button a {
+    color: white;
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+#head-button button {
+    color: white;
+    font-size: 15px;
+    border: solid 1px white;
+    border-radius: 3px;
+    background: transparent;
+    padding: 5px 15px;
+}
+
+#head-search {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    color: white;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+#head-search p {
+    font-size: 20px;
+    text-align: center;
+}
+
+#head-search form {
+    padding-left: 20px;
+}
+
+/*.head-search-input {*/
+    /*display: inline-block;*/
+    /*width: 300px;*/
+    /*background: rgba(255, 255, 255, 0.4);*/
+/*}*/
+input[type="text"] {
+    color: white;
+    width: 400px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.4);
+    border: solid 0;
+    font-size: 15px;
+}
+
+
+input[type="submit"] {
+    -webkit-appearance: initial;
+    background-color: greenyellow;
+    border: 1px solid greenyellow;
+    height: 50px;
+    width: 150px;
+    font-size: 15px;
+    color: white;
+}
+
+.little-box {
+    height: 1px;
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border: solid 1px lightgray;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    clear: both;
+}
+
+#work-list {
+    list-style-type: none;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+
+#work-list li {
+    float: left;
+    display: inline;
+    width: 30%;
+    text-align: center;
+}
+
+#work-list li div{
+    display: inline;
+}
+
+.work-image {
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+
+.name {
+    display: block;
+}
+
+.describe {
+    display: block;
+}
+
+
+
