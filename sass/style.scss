@@ -75,6 +75,7 @@ body {
 
 #main-part {
   margin-top: 80px;
+  overflow: hidden;
 }
 
 header {
@@ -114,11 +115,12 @@ header {
 
 #left {
   width: 240px;
-  height: 1000px;
   background-color: #80a8cc;
   float: left;
   color: white;
   text-align: center;
+  padding-bottom: 100%;
+  margin-bottom: -100%;
 
   .head-icon {
     width: 100px;
@@ -192,11 +194,12 @@ header {
 
 #right {
   width: 240px;
-  height: 1000px;
   background-color: #fffbf5;
   float: right;
   font-size: 15px;
   color: #6c94b8;
+  padding-bottom: 100%;
+  margin-bottom: -100%;
 
   div {
     margin-top: 40px;
