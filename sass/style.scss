@@ -3,16 +3,16 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:url('../fonts/icomoon.eot?-c4lxu8');
-  src:url('../fonts/icomoon.eot?#iefix-c4lxu8') format('embedded-opentype'),
-  url('../fonts/icomoon.ttf?-c4lxu8') format('truetype'),
-  url('../fonts/icomoon.woff?-c4lxu8') format('woff'),
-  url('../fonts/icomoon.svg?-c4lxu8#icomoon') format('svg');
+  src:url('../fonts/icomoon.eot?-grvpaa');
+  src:url('../fonts/icomoon.eot?#iefix-grvpaa') format('embedded-opentype'),
+  url('../fonts/icomoon.woff?-grvpaa') format('woff'),
+  url('../fonts/icomoon.ttf?-grvpaa') format('truetype'),
+  url('../fonts/icomoon.svg?-grvpaa#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="fa-"], [class*=" fa-"] {
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -26,21 +26,66 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-hash:before {
+.fa-mail:before {
+  content: "\f03b";
+}
+
+.fa-plus:before {
+  content: "\f05d";
+}
+
+.fa-quill:before {
   content: "\e600";
 }
-.icon-quill:before {
+
+.fa-redo:before {
   content: "\e601";
 }
-.icon-envelop:before {
-  content: "\e602";
+
+.fa-twitter:before {
+  content: "\e608";
 }
-.icon-bell:before {
+
+.fa-search:before {
+  content: "\f002";
+}
+
+.fa-star:before {
+  content: "\f005";
+}
+
+.fa-refresh:before {
+  content: "\f021";
+}
+
+.fa-chain:before {
+  content: "\f0c1";
+}
+
+.fa-resize:before {
   content: "\e603";
 }
-.icon-twitter:before {
-  content: "\e604";
+
+.fa-resize:before {
+  content: "\e603";
 }
+
+.fa-notifications:before {
+  content: "\e607";
+}
+
+.fa-notifications:before {
+  content: "\e607";
+}
+
+.fa-more-horiz:before {
+  content: "\e606";
+}
+
+.fa-notifications:before {
+  content: "\e607";
+}
+
 
 
 body {
@@ -73,10 +118,10 @@ header {
 
   .black-icon {
     color: #605e58;
-    font-size: 15px;
+    font-size: 18px;
     border-radius: 50%;
     background-color: transparent;
-    padding: 12px;
+    padding: 10px;
     margin-left: 30px;
     border: solid 1px #e0dbd4;
   }
@@ -99,6 +144,7 @@ header {
   
   ul {
     display: inline;
+    padding-left: 0;
   }
 
   li {
@@ -111,25 +157,40 @@ header {
     img {
       height: 40px;
       border-radius: 50%;
+      margin-right: 15px;
+      margin-top: 20px;
     }
 
     form {
       display: inline;
+      position: relative;
+      top: -15px;
+      right: 15px;
+
+      input {
+        height: 40px;
+        width: 150px;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        background-color: transparent;
+        border: solid 1px #e3dfd8;
+        padding-left: 15px;
+        padding-right: 40px;
+        font-size: 17px;
+      }
+
+
+      i {
+        position: absolute;
+        top: -2px;
+        right: 20px;
+        font-size: 15px;
+      }
     }
 
-    input {
-      height: 40px;
-      width: 180px;
-      border-top-left-radius: 50px;
-      border-bottom-left-radius: 50px;
-      border-top-right-radius: 50px;
-      border-bottom-right-radius: 50px;
-      background-color: transparent;
-      border: solid 1px #e3dfd8;
-    }
   }
-
-
 
 }
 
@@ -260,6 +321,19 @@ header {
       font-size: 14px;
       padding-top: 25px;
       padding-bottom: 25px;
+
+      p {
+        line-height: initial;
+      }
+
+      .type {
+        color: #c6c1b0;
+      }
+
+      .number {
+        font-weight: 600;
+        font-size: 18px;
+      }
     }
   }
 
@@ -281,12 +355,21 @@ header {
 
       div {
         margin-left: 60px;
+        position: relative;
 
         .link {
           color: #c6c1b0;
         }
 
-        p {
+        .time {
+          display: inline;
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          color: #b7b5b4;
+        }
+
+        .twit-content {
           color: #605e58;
           padding-top: 15px;
           line-height: initial;
@@ -297,6 +380,27 @@ header {
           width: 100%;
           height: auto;
         }
+
+        ul {
+          border: none;
+          box-shadow: none;
+          padding-top: 20px;
+          position: relative;
+
+          li {
+            display: inline;
+            color: #c6c1b0;
+            padding: 10px;
+            border-bottom: none;
+          }
+
+          li:last-child {
+            position: absolute;
+            right: 0;
+            top: 10px;
+          }
+        }
+
       }
     }
 
