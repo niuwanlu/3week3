@@ -89,7 +89,7 @@ header {
     padding-top: 25px;
   }
 
-  div {
+  #new {
     display: inline-block;
     padding-top: 30px;
     padding-bottom: 34px;
@@ -105,28 +105,31 @@ header {
     display: inline;
   }
 
-  img {
+  #search-div {
     float: right;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 30px;
-    margin-top: 20px;
+
+    img {
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    form {
+      display: inline;
+    }
+
+    input {
+      height: 40px;
+      width: 180px;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+      background-color: transparent;
+      border: solid 1px #e3dfd8;
+    }
   }
 
-  form {
-    float: right;
-  }
 
-  input {
-    height: 40px;
-    width: 180px;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    background-color: transparent;
-    border: solid 1px #e3dfd8;
-  }
 
 }
 
