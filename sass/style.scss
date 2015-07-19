@@ -177,10 +177,7 @@ header {
       input {
         height: 40px;
         width: 150px;
-        border-top-left-radius: 50px;
-        border-bottom-left-radius: 50px;
-        border-top-right-radius: 50px;
-        border-bottom-right-radius: 50px;
+        border-radius: 25px;
         background-color: transparent;
         border: solid 1px #e3dfd8;
         padding-left: 15px;
@@ -191,8 +188,8 @@ header {
 
       i {
         position: absolute;
-        top: -2px;
-        right: 20px;
+        top: -4px;
+        right: 16px;
         font-size: 15px;
       }
     }
@@ -256,10 +253,7 @@ header {
     margin: 20px;
     color: white;
     font-size: 15px;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-radius: 25px;
   }
 
   #act-ul {
@@ -267,6 +261,7 @@ header {
     font-size: 17px;
     padding-left: 15px;
     padding-top: 25px;
+    padding-bottom: 25px;
     line-height: 30px;
 
     .act-p {
@@ -378,6 +373,10 @@ header {
         font-size: 18px;
       }
     }
+
+    li:hover {
+      border-bottom: solid 5px #80a8cc;
+    }
   }
 
   #content {
@@ -474,7 +473,7 @@ header {
     }
 
     form {
-      display: none;
+      display: none !important;
     }
 
   }
