@@ -65,13 +65,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?-c4lxu8");
-  src: url("../fonts/icomoon.eot?#iefix-c4lxu8") format("embedded-opentype"), url("../fonts/icomoon.ttf?-c4lxu8") format("truetype"), url("../fonts/icomoon.woff?-c4lxu8") format("woff"), url("../fonts/icomoon.svg?-c4lxu8#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?-grvpaa");
+  src: url("../fonts/icomoon.eot?#iefix-grvpaa") format("embedded-opentype"), url("../fonts/icomoon.woff?-grvpaa") format("woff"), url("../fonts/icomoon.ttf?-grvpaa") format("truetype"), url("../fonts/icomoon.svg?-grvpaa#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 /* line 15, ../sass/style.scss */
-[class^="icon-"], [class*=" icon-"] {
+[class^="fa-"], [class*=" fa-"] {
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -85,63 +85,103 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 29, ../sass/style.scss */
-.icon-hash:before {
+.fa-mail:before {
+  content: "\f03b";
+}
+
+/* line 33, ../sass/style.scss */
+.fa-plus:before {
+  content: "\f05d";
+}
+
+/* line 37, ../sass/style.scss */
+.fa-quill:before {
   content: "\e600";
 }
 
-/* line 32, ../sass/style.scss */
-.icon-quill:before {
+/* line 41, ../sass/style.scss */
+.fa-redo:before {
   content: "\e601";
 }
 
-/* line 35, ../sass/style.scss */
-.icon-envelop:before {
-  content: "\e602";
+/* line 45, ../sass/style.scss */
+.fa-twitter:before {
+  content: "\e608";
 }
 
-/* line 38, ../sass/style.scss */
-.icon-bell:before {
+/* line 49, ../sass/style.scss */
+.fa-search:before {
+  content: "\f002";
+}
+
+/* line 53, ../sass/style.scss */
+.fa-star:before {
+  content: "\f005";
+}
+
+/* line 57, ../sass/style.scss */
+.fa-refresh:before {
+  content: "\f021";
+}
+
+/* line 61, ../sass/style.scss */
+.fa-chain:before {
+  content: "\f0c1";
+}
+
+/* line 65, ../sass/style.scss */
+.fa-resize:before {
   content: "\e603";
 }
 
-/* line 41, ../sass/style.scss */
-.icon-twitter:before {
-  content: "\e604";
+/* line 69, ../sass/style.scss */
+.fa-resize:before {
+  content: "\e603";
 }
 
-/* line 45, ../sass/style.scss */
+/* line 73, ../sass/style.scss */
+.fa-notifications:before {
+  content: "\e607";
+}
+
+/* line 77, ../sass/style.scss */
+.fa-notifications:before {
+  content: "\e607";
+}
+
+/* line 81, ../sass/style.scss */
+.fa-more-horiz:before {
+  content: "\e606";
+}
+
+/* line 85, ../sass/style.scss */
+.fa-notifications:before {
+  content: "\e607";
+}
+
+/* line 91, ../sass/style.scss */
 body {
   font-size: 62.5%;
 }
 
-/* line 50, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
+#main-part {
+  margin-top: 80px;
+  overflow: hidden;
+}
+
+/* line 100, ../sass/style.scss */
 header {
   width: 100%;
-  height: 50px;
-  position: absolute;
+  height: 80px;
+  position: fixed;
   top: 0px;
   background-color: #fffbf5;
-  padding-top: 30px;
+  box-shadow: 0px 0px 10px 0px #e0dcd7;
+  z-index: 1;
 }
-
-/* line 59, ../sass/style.scss */
-#left {
-  width: 50px;
-  height: 500px;
-  background-color: #80a8cc;
-  float: left;
-}
-
-/* line 66, ../sass/style.scss */
-#right {
-  width: 50px;
-  height: 500px;
-  background-color: #fffbf5;
-  float: right;
-}
-
-/* line 73, ../sass/style.scss */
-.white-icon {
+/* line 110, ../sass/style.scss */
+header .white-icon {
   color: white;
   font-size: 15px;
   border-radius: 50%;
@@ -149,41 +189,370 @@ header {
   padding: 12px;
   margin-left: 30px;
 }
-
-/* line 82, ../sass/style.scss */
-.black-icon {
+/* line 119, ../sass/style.scss */
+header .black-icon {
   color: #605e58;
-  font-size: 15px;
+  font-size: 18px;
   border-radius: 50%;
   background-color: transparent;
-  padding: 12px;
+  padding: 10px;
   margin-left: 30px;
   border: solid 1px #e0dbd4;
 }
-
-/* line 92, ../sass/style.scss */
-.middle-icon {
+/* line 129, ../sass/style.scss */
+header .middle-icon {
   color: #80a8cc;
   font-size: 35px;
   position: absolute;
   left: 50%;
+  padding-top: 25px;
 }
-
-/* line 99, ../sass/style.scss */
-header img {
+/* line 137, ../sass/style.scss */
+header #new {
+  display: inline-block;
+  padding-top: 30px;
+  padding-bottom: 34px;
+  padding-right: 25px;
+  border-right: solid 1px #f1ede6;
+}
+/* line 145, ../sass/style.scss */
+header ul {
+  display: inline;
+  padding-left: 0;
+}
+/* line 150, ../sass/style.scss */
+header li {
+  display: inline;
+}
+/* line 155, ../sass/style.scss */
+header li:last-child i {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+/* line 161, ../sass/style.scss */
+header #search-div {
   float: right;
+}
+/* line 164, ../sass/style.scss */
+header #search-div img {
   height: 40px;
   border-radius: 50%;
+  margin-right: 15px;
+  margin-top: 20px;
+}
+/* line 171, ../sass/style.scss */
+header #search-div form {
+  display: inline;
+  position: relative;
+  top: -15px;
+  right: 15px;
+}
+/* line 177, ../sass/style.scss */
+header #search-div form input {
+  height: 40px;
+  width: 150px;
+  border-radius: 25px;
+  background-color: transparent;
+  border: solid 1px #e3dfd8;
+  padding-left: 15px;
+  padding-right: 40px;
+  font-size: 17px;
+}
+/* line 189, ../sass/style.scss */
+header #search-div form i {
+  position: absolute;
+  top: -4px;
+  right: 16px;
+  font-size: 15px;
+}
+
+/* line 201, ../sass/style.scss */
+#left {
+  width: 240px;
+  background-color: #80a8cc;
+  float: left;
+  color: white;
+  text-align: center;
+  padding-bottom: 100%;
+  margin-bottom: -100%;
+}
+/* line 210, ../sass/style.scss */
+#left .head-icon {
+  width: 100px;
+  border-radius: 50%;
+  display: block;
+  margin: 50px auto 10px;
+}
+/* line 217, ../sass/style.scss */
+#left #pic-ul {
+  overflow: auto;
+  margin-top: 20px;
+}
+/* line 222, ../sass/style.scss */
+#left #pic-ul li {
+  float: left;
+}
+/* line 225, ../sass/style.scss */
+#left #pic-ul li img {
+  width: 80px;
+  height: 80px;
+  display: block;
+}
+/* line 233, ../sass/style.scss */
+#left .name {
+  font-size: 20px;
+}
+/* line 237, ../sass/style.scss */
+#left .describe {
+  font-size: 17px;
+  line-height: initial;
+  padding: 20px;
+}
+/* line 243, ../sass/style.scss */
+#left .link {
+  display: block;
+  font-size: 17px;
+}
+/* line 248, ../sass/style.scss */
+#left button {
+  background-color: #6c94b8;
+  border: 0px;
+  height: 35px;
+  width: 120px;
+  margin: 20px;
+  color: white;
+  font-size: 15px;
+  border-radius: 25px;
+}
+/* line 259, ../sass/style.scss */
+#left #act-ul {
+  text-align: left;
+  font-size: 17px;
+  padding-left: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  line-height: 30px;
+}
+/* line 267, ../sass/style.scss */
+#left #act-ul .act-p {
+  color: #6c94b8;
+  display: inline;
+}
+/* line 272, ../sass/style.scss */
+#left #act-ul a {
+  color: white;
+}
+
+/* line 280, ../sass/style.scss */
+#right {
+  width: 240px;
+  background-color: #fffbf5;
+  float: right;
+  font-size: 15px;
+  color: #6c94b8;
+  padding-bottom: 100%;
+  margin-bottom: -100%;
+}
+/* line 289, ../sass/style.scss */
+#right .list {
+  margin-top: 40px;
+  margin-left: 20px;
+}
+/* line 294, ../sass/style.scss */
+#right h2 {
+  color: #605e58;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* line 300, ../sass/style.scss */
+#right ul {
+  line-height: 25px;
+}
+/* line 304, ../sass/style.scss */
+#right a {
+  float: right;
   margin-right: 30px;
 }
-
-/* line 106, ../sass/style.scss */
-header form {
-  display: inline;
+/* line 309, ../sass/style.scss */
+#right img {
+  width: 40px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+}
+/* line 316, ../sass/style.scss */
+#right .follow-name {
+  color: #605e58;
+}
+/* line 320, ../sass/style.scss */
+#right .follow-title {
+  color: #c6c1b0;
+}
+/* line 324, ../sass/style.scss */
+#right i {
   float: right;
+  margin-right: 30px;
+  border: solid 1px #e3dfd8;
+  color: #605e58;
+  padding: 2px 5px;
+}
+/* line 333, ../sass/style.scss */
+#right #follow li {
+  padding-top: 10px;
 }
 
-/* line 111, ../sass/style.scss */
-header input {
-  height: 40px;
+/* line 339, ../sass/style.scss */
+#main {
+  margin-left: 240px;
+  margin-right: 240px;
+  padding-top: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #f2eee8;
+}
+/* line 348, ../sass/style.scss */
+#main ul {
+  box-shadow: 2px 2px 10px 1px #e0dcd7;
+}
+/* line 352, ../sass/style.scss */
+#main #index {
+  background-color: #fffbf5;
+  text-align: center;
+}
+/* line 356, ../sass/style.scss */
+#main #index li {
+  display: inline-block;
+  width: 24%;
+  font-size: 14px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+/* line 363, ../sass/style.scss */
+#main #index li p {
+  line-height: initial;
+}
+/* line 367, ../sass/style.scss */
+#main #index li .type {
+  color: #c6c1b0;
+}
+/* line 371, ../sass/style.scss */
+#main #index li .number {
+  font-weight: 600;
+  font-size: 18px;
+}
+/* line 377, ../sass/style.scss */
+#main #index li:hover {
+  border-bottom: solid 5px #80a8cc;
+}
+/* line 382, ../sass/style.scss */
+#main #content {
+  background-color: #fffbf5;
+  margin-top: 40px;
+  font-size: 17px;
+}
+/* line 387, ../sass/style.scss */
+#main #content li {
+  border-bottom: solid 1px #f1ede8;
+  padding: 35px;
+}
+/* line 391, ../sass/style.scss */
+#main #content li img {
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 20px;
+  position: absolute;
+}
+/* line 398, ../sass/style.scss */
+#main #content li div {
+  margin-left: 60px;
+  position: relative;
+}
+/* line 402, ../sass/style.scss */
+#main #content li div .link {
+  color: #c6c1b0;
+}
+/* line 406, ../sass/style.scss */
+#main #content li div .time {
+  display: inline;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: #b7b5b4;
+}
+/* line 414, ../sass/style.scss */
+#main #content li div .twit-content {
+  color: #605e58;
+  padding-top: 15px;
+  line-height: initial;
+}
+/* line 420, ../sass/style.scss */
+#main #content li div video {
+  padding-top: 15px;
+  width: 100%;
+  height: auto;
+}
+/* line 426, ../sass/style.scss */
+#main #content li div ul {
+  border: none;
+  box-shadow: none;
+  padding-top: 20px;
+  position: relative;
+}
+/* line 432, ../sass/style.scss */
+#main #content li div ul li {
+  display: inline;
+  color: #c6c1b0;
+  padding: 10px;
+  border-bottom: none;
+}
+/* line 439, ../sass/style.scss */
+#main #content li div ul li:last-child {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  /* line 456, ../sass/style.scss */
+  #right {
+    float: left;
+    clear: left;
+  }
+
+  /* line 461, ../sass/style.scss */
+  #main {
+    margin-right: 0;
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 471, ../sass/style.scss */
+  header .black-icon {
+    display: none;
+  }
+  /* line 475, ../sass/style.scss */
+  header form {
+    display: none !important;
+  }
+
+  /* line 481, ../sass/style.scss */
+  #left {
+    display: none;
+  }
+
+  /* line 485, ../sass/style.scss */
+  #right {
+    display: none;
+  }
+
+  /* line 489, ../sass/style.scss */
+  #main {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  /* line 494, ../sass/style.scss */
+  #main #index li {
+    display: block;
+    width: 100%;
+  }
 }
