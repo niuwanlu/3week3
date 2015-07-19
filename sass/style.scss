@@ -151,6 +151,13 @@ header {
     display: inline;
   }
 
+  li:last-child {
+    i {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  }
+
   #search-div {
     float: right;
 
@@ -207,12 +214,13 @@ header {
     width: 100px;
     border-radius: 50%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
+    margin: 50px auto 10px;
   }
 
   #pic-ul {
+
+    overflow: auto;
+    margin-top: 20px;
 
     li {
       float: left;
@@ -258,6 +266,7 @@ header {
     text-align: left;
     font-size: 17px;
     padding-left: 15px;
+    padding-top: 25px;
     line-height: 30px;
 
     .act-p {
@@ -282,19 +291,53 @@ header {
   padding-bottom: 100%;
   margin-bottom: -100%;
 
-  div {
+  .list {
     margin-top: 40px;
     margin-left: 20px;
   }
 
   h2 {
-    color: black;
+    color: #605e58;
     margin-top: 20px;
     margin-bottom: 20px;
   }
 
   ul {
     line-height: 25px;
+  }
+
+  a {
+    float: right;
+    margin-right: 30px;
+  }
+
+  img {
+    width: 40px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+  }
+
+  .follow-name {
+    color: #605e58;
+  }
+
+  .follow-title {
+    color: #c6c1b0;
+  }
+
+  i {
+    float: right;
+    margin-right: 30px;
+    border: solid 1px #e3dfd8;
+    color: #605e58;
+    padding: 2px 5px;
+  }
+
+  #follow {
+    li {
+      padding-top: 10px;
+    }
   }
 }
 
