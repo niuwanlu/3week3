@@ -89,7 +89,9 @@
 
 
 body {
-	font-size: 62.5%;
+  font-size: 62.5%;
+  font-family: "Helvetica Neue", "Helvetica,Arial" , "sans-serif";
+  font-weight: 200;
 }
 
 #main-part {
@@ -232,6 +234,7 @@ header {
 
   .name {
     font-size: 20px;
+    font-weight: 400;
   }
 
   .describe {
@@ -258,7 +261,7 @@ header {
 
   #act-ul {
     text-align: left;
-    font-size: 17px;
+    font-size: 16px;
     padding-left: 15px;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -398,6 +401,10 @@ header {
       div {
         margin-left: 60px;
         position: relative;
+
+        .name {
+          font-weight: 400;
+        }
 
         .link {
           color: #c6c1b0;
