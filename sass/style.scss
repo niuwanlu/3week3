@@ -1,3 +1,28 @@
 @import "compass/reset";
 @import "compass/css3";
 
+.back-layer {
+  width: 400px;
+  height: 100%;
+  background-color: #efefef;
+  border: solid 1px #dddddd;
+
+  img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+#layer1 {
+  position: absolute;
+  left: 50px;
+}
+
+#layer2 {
+  position: absolute;
+  left: 150px;
+}
+
+.back-layer:hover {
+  z-index: 1;
+}
