@@ -25,5 +25,12 @@
 
 .back-layer:hover {
   z-index: 1;
-  transform: translate3d(-50px, 0px, 0px);
+  animation-name: move;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes move {
+  50% {transform: translate3d(50px, 0px, 0px);}
+  50% {transform: translate3d(-50px, 0px, 0px);}
 }
