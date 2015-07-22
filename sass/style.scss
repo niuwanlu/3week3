@@ -15,22 +15,26 @@
 
 #layer1 {
   position: absolute;
-  left: 50px;
+  left: 200px;
 }
 
 #layer2 {
   position: absolute;
-  left: 150px;
+  left: 300px;
 }
 
 .back-layer:hover {
-  z-index: 1;
-  animation-name: move;
-  animation-duration: 2s;
-  animation-timing-function: linear;
+  animation: moveBack 2s ease-in-out;
+  animation-fill-mode: forwards;
 }
 
-@keyframes move {
-  50% {transform: translate3d(50px, 0px, 0px);}
-  50% {transform: translate3d(-50px, 0px, 0px);}
+
+@keyframes moveBack {
+  50% {
+    transform: translate3d(-350px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+    z-index: 1;
+  }
 }
