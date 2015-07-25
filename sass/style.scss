@@ -58,6 +58,12 @@ h2 {
   padding-top: 200px;
 }
 
+#layer6 {
+  position: absolute;
+  left: 700px;
+  padding-top: 250px;
+}
+
 .back-layer:hover {
   animation: moveBack 2s ease-in-out;
   animation-fill-mode: forwards;
