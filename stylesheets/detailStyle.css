@@ -21,6 +21,12 @@ body{
     z-index: 1;
     display:none;
 }
+#back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
 #tf_see{
     position: absolute;
     top: 50%;
