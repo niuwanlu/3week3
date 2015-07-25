@@ -11,37 +11,53 @@
 </head>
 <body>
 
-<div id="layer1" class="back-layer">
+<div id="layer-list">
+    <div id="layer1" class="back-layer">
 
-    <h2>Abyss Table 深海桌</h2>
-    <img src="images/table1.jpg">
+        <h2>Abyss Table 深海桌</h2>
+        <a href="detail.html" onclick="saveValue(0)">
+            <img src="images/table1.jpg">
+        </a>
 
+    </div>
+
+    <div id="layer2" class="back-layer">
+        <h2>手工打造的梦幻鸡尾酒桌</h2>
+        <a href="detail.html" onclick="saveValue(1)">
+            <img src="images/table2.jpg">
+        </a>
+
+    </div>
+
+    <div id="layer3" class="back-layer">
+        <h2>流体冰桌</h2>
+        <a href="detail.html" onclick="saveValue(2)">
+            <img src="images/table3.jpg">
+        </a>
+
+    </div>
+
+    <div id="layer4" class="back-layer">
+        <h2>秋千会议桌</h2>
+        <a href="detail.html" onclick="saveValue(3)">
+            <img src="images/table4.jpg">
+        </a>
+
+    </div>
+
+    <div id="layer5" class="back-layer">
+        <h2>picNYC TABLE 绿茵餐桌</h2>
+        <a href="detail.html" onclick="saveValue(4)">
+            <img src="images/table5.jpg">
+        </a>
+
+    </div>
 </div>
 
-<div id="layer2" class="back-layer">
-    <h2>手工打造的梦幻鸡尾酒桌</h2>
-    <img src="images/table2.jpg">
-
-</div>
-
-<div id="layer3" class="back-layer">
-    <h2>流体冰桌</h2>
-    <img src="images/table3.jpg">
-
-</div>
-
-<div id="layer4" class="back-layer">
-    <h2>秋千会议桌</h2>
-    <img src="images/table4.jpg">
-
-</div>
-
-<div id="layer5" class="back-layer">
-    <h2>picNYC TABLE 绿茵餐桌</h2>
-    <img src="images/table5.jpg">
-
-</div>
-
-
+<script>
+    function saveValue(imgNum) {
+        localStorage.setItem('imgNum', imgNum);
+    }
+</script>
 </body>
 </html>
