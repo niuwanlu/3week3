@@ -1,0 +1,131 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:#000;
+}
+.tf_bg{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0px;
+    left:0px;
+}
+.tf_bg img{
+    position:absolute;
+    top:0px; /*-482px;	 -(imgh/2 - wh/2) */
+    left:0px;	/* calculate a negative value to center horizontally */
+    width:100%;	/* windowwidth plus negative value of left */
+    /*height:1650px; /* windowheight plus negative value of top */
+    z-index: 1;
+    display:none;
+}
+#tf_see{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    z-index: 100;
+    border: solid 1px white;
+    background-color: transparent;
+    color: white;
+    padding: 1px 20px 5px 20px;
+    font-size: 20px;
+    opacity: 0.7;
+    box-shadow: 0px 0px 5px 1px;
+    animation: breathing 2s linear infinite;
+}
+@keyframes breathing {
+    50% {
+        box-shadow: 0px 0px 5px 2px;
+    }
+    100% {
+        box-shadow: 0px 0px 5px 1px;
+    }
+}
+#tf_pattern{
+    position:absolute;
+    width:100%;
+    height:100%;
+    transition: background-color 1s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index:2;
+}
+#tf_content_wrapper {
+    transition: opacity 1s ease-out;
+}
+#tf_see:hover {
+    opacity: 0.5;
+    animation: none;
+}
+#tf_see:hover ~ #tf_pattern {
+    background-color: transparent;
+}
+#tf_see:hover ~ #tf_content_wrapper {
+    opacity: 0;
+}
+
+.tf_content{
+    position:absolute;
+    bottom:50px;
+    left:50px;
+    z-index:10;
+    display:none;
+}
+.tf_content h2{
+    color:#fff;
+    font-size:90px;
+    padding:0;
+    margin:0;
+    font-family: 'Dancing Script', arial, serif;
+    text-shadow:1px 1px 2px #000;
+}
+.tf_content p{
+    color:#fff;
+    margin:0;
+    padding:40px;
+    width:500px;
+    font-family: 'PT Sans Narrow', arial, serif;
+    font-size:20px;
+    line-height:25px;
+    text-transform:uppercase;
+    text-shadow:2px 2px 1px #000;
+}
+.tf_thumbs img{
+    display:block;
+}
+.tf_loading{
+    position:fixed;
+    top:50%;
+    left:50%;
+    margin:-30px 0px 0px -30px;
+    width:60px;
+    height:60px;
+    background:#fff url(../images/loader.gif) no-repeat center center;
+    z-index:999;
+    opacity:0.7;
+}
+.tf_next,
+.tf_prev{
+    width:35px;
+    height:14px;
+    position:absolute;
+    top:50%;
+    right:38px;
+    z-index:100;
+    cursor:pointer;
+    background:transparent url(../images/nav.png) no-repeat top left;
+    opacity:0.5;
+}
+.tf_next{
+    background-position:0px -14px;
+    margin-top:76px;
+}
+.tf_prev{
+    background-position:0px 0px;
+    margin-top:-55px;
+}
+.tf_next:hover,
+.tf_prev:hover{
+    opacity:0.9;
+}
