@@ -63,3 +63,78 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+/* line 4, ../sass/style.scss */
+body {
+  font-family: "helvetica neue",arial,sans-serif;
+}
+
+/* line 8, ../sass/style.scss */
+h2 {
+  font-size: 25px;
+  font-weight: 100;
+}
+
+/* line 13, ../sass/style.scss */
+.back-layer {
+  width: 400px;
+  border: solid 1px #f8f3e7;
+  background-color: #fafafa;
+  box-shadow: 0px 0px 3px 1px #f8f3e7;
+  top: 0;
+  bottom: 0;
+}
+/* line 21, ../sass/style.scss */
+.back-layer img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* line 27, ../sass/style.scss */
+#layer1 {
+  position: absolute;
+  left: 200px;
+}
+
+/* line 32, ../sass/style.scss */
+#layer2 {
+  position: absolute;
+  left: 300px;
+  padding-top: 50px;
+}
+
+/* line 38, ../sass/style.scss */
+#layer3 {
+  position: absolute;
+  left: 400px;
+  padding-top: 100px;
+}
+
+/* line 44, ../sass/style.scss */
+#layer4 {
+  position: absolute;
+  left: 500px;
+  padding-top: 150px;
+}
+
+/* line 50, ../sass/style.scss */
+#layer5 {
+  position: absolute;
+  left: 600px;
+  padding-top: 200px;
+}
+
+/* line 56, ../sass/style.scss */
+.back-layer:hover {
+  animation: moveBack 2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveBack {
+  50% {
+    transform: translate3d(-350px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+    z-index: 1;
+  }
+}
