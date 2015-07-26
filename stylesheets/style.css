@@ -65,65 +65,77 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 4, ../sass/style.scss */
 body {
-  font-family: "helvetica neue",arial,sans-serif;
+  height: 100%;
+  width: 100%;
+  background: url("../images/background.jpg") no-repeat;
 }
 
-/* line 8, ../sass/style.scss */
+/* line 10, ../sass/style.scss */
 h2 {
   font-size: 25px;
   font-weight: 100;
+  padding: 20px;
+  color: #02a6db;
+  font-family: "helvetica neue",arial,sans-serif;
 }
 
-/* line 13, ../sass/style.scss */
+/* line 18, ../sass/style.scss */
 .back-layer {
   width: 400px;
-  border: solid 1px #f8f3e7;
   background-color: #fafafa;
-  box-shadow: 0px 0px 3px 1px #f8f3e7;
+  box-shadow: 0px 0px 20px -7px #02a6db;
   top: 0;
   bottom: 0;
+  overflow: hidden;
 }
-/* line 21, ../sass/style.scss */
+/* line 26, ../sass/style.scss */
 .back-layer img {
   width: 100%;
   border-radius: 20px;
 }
 
-/* line 27, ../sass/style.scss */
+/* line 32, ../sass/style.scss */
 #layer1 {
   position: absolute;
   left: 200px;
 }
 
-/* line 32, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 #layer2 {
   position: absolute;
   left: 300px;
-  padding-top: 50px;
+  padding-top: 200px;
 }
 
-/* line 38, ../sass/style.scss */
+/* line 43, ../sass/style.scss */
 #layer3 {
   position: absolute;
   left: 400px;
   padding-top: 100px;
 }
 
-/* line 44, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 #layer4 {
   position: absolute;
   left: 500px;
-  padding-top: 150px;
+  padding-top: 50px;
 }
 
-/* line 50, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 #layer5 {
   position: absolute;
   left: 600px;
-  padding-top: 200px;
+  padding-top: 250px;
 }
 
-/* line 56, ../sass/style.scss */
+/* line 61, ../sass/style.scss */
+#layer6 {
+  position: absolute;
+  left: 700px;
+  padding-top: 150px;
+}
+
+/* line 67, ../sass/style.scss */
 .back-layer:hover {
   animation: moveBack 2s ease-in-out;
   animation-fill-mode: forwards;
@@ -135,6 +147,47 @@ h2 {
   }
   100% {
     transform: translate3d(0px, 0px, 0px);
-    z-index: 1;
+    z-index: 2;
   }
+}
+/* line 83, ../sass/style.scss */
+#logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 500px;
+  height: 100%;
+  background: url("../images/background.jpg") 20% 65%;
+  z-index: 1;
+}
+/* line 92, ../sass/style.scss */
+#logo img {
+  width: 100px;
+  border-radius: 50%;
+}
+/* line 98, ../sass/style.scss */
+#logo h1 {
+  font-size: 40px;
+  margin: auto;
+  color: #2d66bf;
+  font-family: 'Dancing Script', arial, serif;
+  padding-left: 70px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/* line 108, ../sass/style.scss */
+#logo p {
+  font-family: "helvetica neue",arial,sans-serif;
+  font-size: 25px;
+  font-weight: 100;
+  color: #02a6db;
+  padding: 20px 20px 0 140px;
+}
+/* line 116, ../sass/style.scss */
+#logo #design {
+  position: absolute;
+  bottom: 40px;
+  right: 10px;
+  font-size: 16px;
+  font-weight: 200;
 }
