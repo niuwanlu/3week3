@@ -96,12 +96,21 @@ h2 {
     border-radius: 50%;
   }
 
-  p {
+  h1 {
     font-size: 40px;
-    width: 180px;
     margin: auto;
     color: #2d66bf;
     font-family: 'Dancing Script', arial, serif;
+    padding-left: 70px;
+    padding-top: 30px;
+  }
+
+  p {
+    font-family: "helvetica neue",arial,sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+    color: #02a6db;
+    padding: 20px 20px 0 140px;
   }
 
 }

@@ -16,6 +16,10 @@ $(function() {
         onComplete	: function(){
             $tf_loading.hide();
             init();
+            console.log("start");
+            $tf_content_wrapper.children()
+                .eq(current)
+                .show();
         }
     });
 
@@ -168,6 +172,7 @@ $(function() {
             $tf_content_wrapper.children()
                 .eq(current)
                 .show();
+            console.log(current);
         });
         //hide the current description
         $tf_content_wrapper.children(':visible')
