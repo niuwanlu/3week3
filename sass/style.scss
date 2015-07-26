@@ -5,7 +5,6 @@ body {
   height: 100%;
   width: 100%;
   background: url("../images/background4.jpg") no-repeat;
-  background-size:cover;
 }
 
 h2 {
@@ -88,8 +87,7 @@ h2 {
   right: 0;
   width: 500px;
   height: 100%;
-  background: url("../images/background4.jpg") repeat-y;
-  background-size: cover;
+  background: url("../images/background4.jpg") 20% 65%;
   z-index: 1;
 
   img {
