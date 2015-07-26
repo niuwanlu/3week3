@@ -23,9 +23,16 @@ body{
 }
 #back {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 10px;
+    left: 10px;
     z-index: 100;
+    border: solid 1px white;
+    background-color: transparent;
+    color: white;
+    padding: 1px 20px 5px 20px;
+    font-size: 20px;
+    opacity: 0.7;
+    text-decoration: none;
 }
 #tf_see{
     position: absolute;
@@ -70,6 +77,10 @@ body{
 #tf_see:hover ~ #tf_content_wrapper {
     opacity: 0;
 }
+#tf_see:hover + #back {
+    opacity: 0;
+}
+
 
 .tf_content{
     position:absolute;

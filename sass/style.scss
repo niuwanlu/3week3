@@ -2,7 +2,6 @@
 @import "compass/css3";
 
 body {
-  font-family: "helvetica neue",arial,sans-serif;
   height: 100%;
   width: 100%;
   background: url("../images/background4.jpg") no-repeat;
@@ -12,6 +11,9 @@ body {
 h2 {
   font-size: 25px;
   font-weight: 100;
+  padding: 20px;
+  color: #02a6db;
+  font-family: "helvetica neue",arial,sans-serif;
 }
 
 .back-layer {
@@ -76,14 +78,19 @@ h2 {
   }
   100% {
     transform: translate3d(0px, 0px, 0px);
-    z-index: 1;
+    z-index: 2;
   }
 }
 
 #logo {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 0;
+  right: 0;
+  width: 500px;
+  height: 100%;
+  background: url("../images/background4.jpg") repeat-y;
+  background-size: cover;
+  z-index: 1;
 
   img {
     width: 100px;
@@ -93,8 +100,10 @@ h2 {
 
   p {
     font-size: 40px;
-    width: 40px;
+    width: 180px;
     margin: auto;
+    color: #2d66bf;
+    font-family: 'Dancing Script', arial, serif;
   }
 
 }
